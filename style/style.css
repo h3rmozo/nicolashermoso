@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer a {
+    font-size: 1.5em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+.fade-zoom {
+    opacity: 0.95;
+    transition: opacity 0.5s, transform 0.4s;
+}
+
+.fade-zoom:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Efeito de hover nos itens do menu de navegação */
+.nav-link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffffff;
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Efeito de hover no logo "Nicolas Hermoso" */
+#logo-link {
+    text-decoration: none; /* Remover sublinhado */
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+#logo-link:hover {
+    text-decoration: none; /* Garantir que o sublinhado seja removido */
+    transform: scale(1.01);
+}
+
+.text-indent {
+    text-indent: 50px; /* Altere o valor conforme necessário */
+}

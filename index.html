@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas' Portfólio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#" id="logo-link" class="text-white"><h1 class="m-0">Nicolas Hermoso</h1></a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#sobre" class="nav-link text-white">Sobre</a></li>
+                        <li class="nav-item"><a href="#projetos" class="nav-link text-white">Projetos</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link text-white">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img id="profile-pic" src="images/20240125_204740.jpg" alt="Foto do Nicolas" class="img-fluid rounded-circle mb-4 fade-zoom">
+                </div>
+                <div class="col-md-8">
+                    <h2>Sobre Mim</h2>
+                    <p class="text-indent">Olá! Meu nome é Nicolas Hermoso. Atualmente, estou cursando Sistemas de Informação e estou em um emocionante caminho para me tornar um desenvolvedor Full Stack.</p>
+                    <p>
+                        Estou me especializando em Node.js para o desenvolvimento back-end, construindo aplicações robustas e escaláveis. Além disso, tenho uma grande paixão por Python, que uso extensivamente para análise de dados e Business Intelligence (BI).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projetos" class="py-5">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/projeto1.jpg" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Descrição breve do projeto 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/projeto2.jpg" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Descrição breve do projeto 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/projeto3.jpg" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Descrição breve do projeto 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contato" class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contato</h5>
+                    <p>Email: <a href="mailto:nicolasxhermoso@hotmail.com" class="text-white">nicolasxhermoso@hotmail.com</a></p>
+                    <p>Telefone: <span id="numberToCopy">(14) 99772-4448</span>
+                        <button class="btn btn-light btn-sm ml-2" onclick="copyText()">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <p id="copyMessage" style="display:none; color:green;">Número copiado!</p>
+
+                    </p>
+                </div>
+                
+                <div class="col-md-6 text-md-right">
+                    <!-- <a href="#" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> -->
+                    <!-- <a href="#" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/nicolas-hermoso/" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/h3rmozo" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>
