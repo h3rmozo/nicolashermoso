@@ -67,10 +67,7 @@ html, body {
     font-size: 1.25rem;
 }
 
-#theme-toggle.btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
+
 
 /* Garantir que o botão de tema esteja centralizado verticalmente */
 .navbar .nav-item {
@@ -103,4 +100,27 @@ html, body {
         margin-left: 0;
         text-align: left;
     }
+}
+
+/* Estilos para o botão de tema no modo claro */
+[data-bs-theme="light"] #theme-toggle {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo igual ao hover */
+    color: #333; /* Cor do ícone/texto escura */
+    border-radius: 50%; /* Garantir que o botão permaneça arredondado */
+}
+
+[data-bs-theme="light"] #theme-toggle.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo mais clara ao passar o mouse */
+}
+
+/* Estilos para o botão de tema no modo escuro */
+[data-bs-theme="dark"] #theme-toggle {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo no modo escuro */
+    color: #ffffff; /* Cor do ícone/texto clara no modo escuro */
+    border-radius: 50%; /* Garantir que o botão permaneça arredondado */
+}
+
+/* Remover efeito de hover para o botão de tema no modo escuro */
+[data-bs-theme="dark"] #theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Manter a mesma cor de fundo */
 }
