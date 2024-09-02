@@ -1,109 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolas' Portfólio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="/style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Hermoso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 </head>
+
 <body>
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <a href="#" id="logo-link" class="text-white"><h1 class="m-0">Nicolas Hermoso</h1></a>
-                </div>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#sobre" class="nav-link text-white">Sobre</a></li>
-                        <li class="nav-item"><a href="#projetos" class="nav-link text-white">Projetos</a></li>
-                        <li class="nav-item"><a href="#contato" class="nav-link text-white">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+  <div class="container-fluid full-height-container">
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark-subtle px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nicolas Hermoso</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contato">Contato</a>
+              </li>
+              <!-- <li class="nav-item">
+                <button id="theme-toggle">
+                  <i class="fa-solid fa-eye"></i>
+              </button>
+              </li> -->
+            </ul>
+            
+          </div>
+          
         </div>
+        <button id="theme-toggle">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+      </nav>
     </header>
-    
-    <section id="sobre" class="py-5 bg-light">
+
+
+    <section id="sobre" class="py-5 bg-body">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <img id="profile-pic" src="images/20240125_204740.jpg" alt="Foto do Nicolas" class="img-fluid rounded-circle mb-4 fade-zoom">
+                <div class="col-md-4 text-center text-md-start">
+                    <img id="profile-pic" src="images/20240125_204740.jpg" alt="Foto do Nicolas"
+                        class="img-fluid rounded-circle fade-zoom mb-4 mb-md-0">
                 </div>
                 <div class="col-md-8">
-                    <h2>Sobre Mim</h2>
-                    <p class="text-indent">Oi! Eu sou o Nicolas. Estou estudando Sistemas de Informação e me preparando para ser um desenvolvedor Full Stack. Tenho focado em Node.js para trabalhar com back-end, criando aplicações sólidas e que possam crescer. Além disso, adoro Python, que uso bastante para análise de dados e Business Intelligence (BI).</p>
+                    <h2 class="border-bottom border-primary mb-3">Sobre</h2>
+                    <p class="text-indent">Olá! Eu sou o Nicolas. Estou cursando Sistemas de Informação e me preparando para ser
+                        um desenvolvedor Full Stack cada vez melhor. Tenho focado em <span class="text-primary">Node, React, PostgreSQL</span></p>
+                    <p class="text-indent">Também sigo com projetos mobile. Vejo um grande potencial nesses aplicativos</p>
+                    <p class="text-indent">Tenho conhecimento em <span class="text-primary">Python</span>, para automação de tarefas, gerenciamento de estoque
+                        ligado ao excel</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="projetos" class="py-5">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="images/projeto1.jpg" class="card-img-top" alt="Projeto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 1</h5>
-                            <p class="card-text">Descrição breve do projeto 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="images/projeto2.jpg" class="card-img-top" alt="Projeto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 2</h5>
-                            <p class="card-text">Descrição breve do projeto 2.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="images/projeto3.jpg" class="card-img-top" alt="Projeto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 3</h5>
-                            <p class="card-text">Descrição breve do projeto 3.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer id="contato" class="bg-dark text-white py-4">
+
+    <footer id="Contato" class="bg-dark-subtle py-4 mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-11">
                     <h5>Contato</h5>
-                    <p>Email: <a href="mailto:nicolasxhermoso@hotmail.com" class="text-white">nicolasxhermoso@hotmail.com</a></p>
+                    <p>Email: <a href="mailto:nicolasxhermoso@hotmail.com" class="">nicolasxhermoso@hotmail.com</a></p>
                     <p>Telefone: <span id="numberToCopy">(14) 99772-4448</span>
                         <button class="btn btn-light btn-sm ml-2" onclick="copyText()">
                             <i class="fas fa-copy"></i>
                         </button>
-                        <p id="copyMessage" style="display:none; color:green;">Número copiado!</p>
-
+                    <p id="copyMessage" style="display:none; color:rgb(0, 248, 232); font-size: 10px;">Número copiado!</p>
                     </p>
                 </div>
-                
                 <div class="col-md-1 text-md-right">
-                    <!-- <a href="#" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> -->
-                    <!-- <a href="#" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> -->
-                    <a href="https://www.linkedin.com/in/nicolas-hermoso/" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/h3rmozo" class="text-white mx-2" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/nicolas-hermoso/" class="icon-link mx-2" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/h3rmozo" class="icon-link mx-2" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./scripts/script.js"></script>
 
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script src="./scripts/script.js"></script>
 </body>
+
 </html>
