@@ -1,27 +1,13 @@
-
-
-/* Estilo geral para .nav-link */
-/* .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    width: 0;
-    background-color: #f8f9fa;
-    transition: width 0.3s ease;
-} */
-
 .nav-link:hover::after {
     width: 100%;
 }
 
-.container-fluid{
+.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
 
-#profile-pic{
+#profile-pic {
     width: 300px;
 }
 
@@ -35,15 +21,12 @@ main {
     padding-bottom: 4rem; /* Ajuste este valor para a altura do seu footer */
 }
 
-
-
-.navbar-tggler-icon {
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    /* Cor das três linhas do ícone do botão */
 }
 
 .full-height-container {
-    height: 100vh; /* 100% da altura da viewport */
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -65,10 +48,61 @@ html, body {
 
 /* Estilos padrão (modo escuro) */
 .icon-link {
-  color: #ffffff; /* Cor dos ícones no modo escuro */
+    color: #ffffff; /* Cor dos ícones no modo escuro */
 }
 
 /* Estilos para o modo claro */
 [data-bs-theme="light"] .icon-link {
-  color: #333333; /* Cor dos ícones no modo claro (escura) */
+    color: #333333; /* Cor dos ícones no modo claro (escura) */
+}
+
+/* Estilos para o botão de tema */
+#theme-toggle {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+#theme-toggle i {
+    font-size: 1.25rem;
+}
+
+#theme-toggle.btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* Garantir que o botão de tema esteja centralizado verticalmente */
+.navbar .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o item do botão de tema */
+.nav-item.theme-toggle-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    padding-left: 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 991.98px) {
+    .nav-item.theme-toggle-item {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding-top: 10px;
+        margin-top: 10px;
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar-nav .theme-toggle-item button {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+    }
 }
