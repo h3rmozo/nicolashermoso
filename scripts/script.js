@@ -5,8 +5,8 @@ function copyText() {
     // Usa a API Clipboard para copiar o texto
     navigator.clipboard.writeText(numberToCopy).then(() => {
         // Exibe a mensagem de confirmação
-        const copyMessage = document.getElementById("copyMessage");
-        copyMessage.style.display = "block";
+        // const copyMessage = document.getElementById("copyMessage");
+        // copyMessage.style.display = "block";
         
         // Oculta a mensagem após 2 segundos
         setTimeout(() => {
