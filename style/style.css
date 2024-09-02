@@ -96,13 +96,11 @@ html, body {
         margin-top: 10px;
         padding-left: 0;
         margin-left: 0;
-        width: 100%;
         display: block;
     }
 
     .navbar-nav .theme-toggle-item button {
         margin-left: 0;
-        width: 100%;
         text-align: left;
     }
 }
